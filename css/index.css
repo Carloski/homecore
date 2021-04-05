@@ -1,7 +1,7 @@
 /* Background images HERO section will show image. If browser doesn't support blend mode, it'll default back to solid color*/
 @supports (background-blend-mode: multiply) {
   .hero {
-    min-height: 95vh;
+    min-height: 85vh;
     color: var(--secondary);
     background: var(--primary);
     background: url('./images/hero.jpg'), radial-gradient(#808080, #333333);
