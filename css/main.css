@@ -1,0 +1,266 @@
+/* Google Fonts "Noto Sans JP" */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+/* 
+==============
+COLOURS
+==============
+*/
+:root {
+  --primary: #0a1725;
+  --secondary: #fff;
+  --accent: #ff8d00;
+  --dark:#161616;
+  --lightGray: #f8f8f8;
+  --text: #333;
+  --links: #275a91;
+}
+
+/* 
+==============
+GLOBAL RULES
+==============
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+li a:hover {
+  color: var(--accent);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  line-height: 1.2;
+  margin: .8em 0;
+}
+
+p {
+  margin: .8em 0;
+}
+
+span {
+  color: var(--accent);
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 5em 0;
+}
+
+/* 
+==============
+UTILITY CLASSES
+==============
+*/
+
+
+#break {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 1.3rem;
+  padding: 2em 0;
+}
+
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 1em 3em;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.card {
+  background-color: var(--secondary);
+  color: var(--text);
+  border-radius: .8em;
+  box-shadow: 0 1.8em 1.8em rgba(0, 0, 0, 0.2);
+  padding: 1.5em;
+  margin: 1.7em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+/* 
+==============
+BUTTONS
+==============
+*/
+.btn {
+  padding: .75em 2em;
+  cursor: pointer;
+  border: none;
+  border-radius: .4em;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+.btn-primary {
+  color: var(--secondary);
+  background-color: var(--primary);
+}
+
+
+
+/* 
+==============
+NAVBAR & FOOTER
+==============
+*/
+.navbar {
+  background-color: var(--primary);
+  padding: 0 .4em;
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  font-size: 1rem;
+  
+}
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar .container {
+  padding:0;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar a {
+  padding: .3em .3em;
+  margin: 0 .5em;
+}
+
+.navbar a:hover, 
+.navbar a:focus {
+  border-bottom: var(--accent) .2em solid;
+}
+
+.logo {
+  color: var(--secondary);
+  font-size: 1.2rem;
+  border: solid .1em var(--accent);
+  padding: .5em;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: var(--dark);
+  color: var(--secondary);
+  padding: 1.5em;
+}
+
+footer span {
+  color: var(--accent);
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+/* 
+==============
+MEDIA QUERIES
+==============
+*/
+
+@media (max-width: 868px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .navbar {
+    position: relative;
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1em;
+  }
+
+  .navbar a:hover, 
+  .navbar a:focus {
+  border-bottom: none;
+}
+
+  .hero h1 {
+    font-size: 3.5rem !important;
+  }
+
+  .hero>.container  {
+    padding-bottom: 0;
+  }
+
+  .hero>.container +.container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero a {
+    max-width: 50%;
+  }
+
+  .hero a + a{
+    margin-top: 1.2em;
+  }
+
+  .newsletter form-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+  }
+
+  .newsletter input[type='email'] {
+    min-width: 100%;
+  }
+
+}

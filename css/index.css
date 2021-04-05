@@ -1,0 +1,78 @@
+/* Background images HERO section will show image. If browser doesn't support blend mode, it'll default back to solid color*/
+@supports (background-blend-mode: multiply) {
+  .hero {
+    min-height: 95vh;
+    color: var(--secondary);
+    background: var(--primary);
+    background: url('./images/hero.jpg'), radial-gradient(#808080, #333333);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+}
+
+/* 
+==============
+SHOWCASE
+==============
+*/
+
+.hero h1 {
+  font-size: 6rem;
+  line-height: 0;
+  font-weight: 900;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+}
+
+.hero p {
+  max-width: 60%;
+  margin-bottom: 3em;
+}
+
+/* 
+==============
+BODY SECTIONS
+==============
+*/
+
+
+#section-2 .flex {
+  gap: 30px;
+}
+
+
+/* Section-4 */
+
+#section-4 {
+  background-color: var(--lightGray);
+}
+
+.newsletter h3 {
+  font-size: 2rem;
+}
+
+.newsletter p {
+  font-size: 1.5rem;
+}
+
+.newsletter input[type='email'] {
+  padding: 1em 1em;
+  width: 60%;
+  border: none;
+  border-radius: .8em;
+  font-size: 1rem;
+}
+
+.social a {
+  color: var(--primary);
+  margin-right: 15px;
+}
+
+.social a:hover {
+  color: var(--accent);
+}

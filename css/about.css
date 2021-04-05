@@ -1,0 +1,59 @@
+
+#section-1 .flex {
+  flex-wrap: wrap;
+}
+
+.flex .card {
+  margin: 1.2em .8em 2.5em;
+  transition: transform 0.2s ease-in;
+  box-shadow: 0 .3em 2em rgba(0, 0, 0, 0.2);
+  width: 250px;
+}
+
+.flex .card:hover {
+  transform: translateY(-.5rem);
+  cursor: pointer;
+}
+
+.flex .card h4 {
+  margin-bottom: 1em;
+}
+
+.flex .card i {
+  color: var(--text);
+}
+
+#break {
+  font-size: 1rem;
+}
+
+/*
+==============
+BOTTOM HALF
+==============
+*/
+
+
+#section-2 {
+  background-color: var(--lightGray);
+}
+
+#section-2 .card {
+  background-color: var(--secondary);
+  box-shadow: none;
+}
+
+#section-2 h3 {
+  margin: 1em .3em 0 0;
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+#section-2 li {
+  list-style: square;
+}
+
+#section-2 ul {
+  padding-left: 3.75em;
+}

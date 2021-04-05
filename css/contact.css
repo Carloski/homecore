@@ -1,0 +1,29 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 1em .8em 2.5em;
+    transition: transform 0.2s ease-in;
+    background-color: var(--secondary);
+    box-shadow: none;
+  }
+
+.card-text {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.card img {
+    width: 9.375em;
+    height: 9.375em;
+    border-radius: 50%;
+    border: solid .2em var(--accent);
+}
+
+
+ table {
+      text-align: left;
+  }
