@@ -23,6 +23,10 @@
     border: solid .2em var(--accent);
 }
 
+#section-2 {
+    background-color: var(--lightGray);
+}
+
 
  table {
       text-align: left;
