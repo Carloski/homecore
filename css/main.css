@@ -11,7 +11,7 @@ COLOURS
   --secondary: #fff;
   --accent: #ff8d00;
   --dark:#161616;
-  --lightGray: #f8f8f8;
+  --lightGray: #dad8d8;
   --text: #333;
   --links: #275a91;
 }
@@ -46,10 +46,6 @@ a {
 li a {
   text-decoration: none;
   color: var(--secondary);
-}
-
-li a:hover {
-  color: var(--accent);
 }
 
 h1,
@@ -193,6 +189,7 @@ footer {
   background-color: var(--dark);
   color: var(--secondary);
   padding: 1.5em;
+  font-size: 1.2rem;
 }
 
 footer span {
@@ -201,6 +198,33 @@ footer span {
 
 footer .flex {
   justify-content: space-between;
+}
+
+/* 
+==============
+PRICES PAGE 
+==============
+*/
+
+.content iframe {
+  float: left;
+  padding: 0 1em 1em 0;
+}
+
+table {
+  text-align: left;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+}
+
+ td, th {
+  padding: 8px;
+  border: 1px solid #333;
+}
+
+tr:nth-child(even) {
+  background-color: var(--lightGray);
 }
 
 /* 
@@ -222,15 +246,17 @@ MEDIA QUERIES
   }
 
   .navbar ul {
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 1em;
+    flex-wrap: wrap;
+  }
+
+  .navbar li {
+    margin-bottom: .5em;
   }
 
   .navbar a:hover, 
   .navbar a:focus {
-  border-bottom: none;
-}
+    border-bottom: var(--accent) .2em solid;
+  }
 
   .hero h1 {
     font-size: 3.5rem !important;

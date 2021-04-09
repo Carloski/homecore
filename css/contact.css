@@ -1,6 +1,6 @@
-.flex {
-    display: flex;
+#section-1 .flex {
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .card {
@@ -27,7 +27,42 @@
     background-color: var(--lightGray);
 }
 
+#section-2 .flex {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#section-2  .card {
+    width: 100%;
+    box-shadow: 0 1.8em 1.8em rgba(0, 0, 0, 0.2);
+    padding: 1.5em;
+    margin: 1.7em;
+}
+
+.contact-form input {
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--dark);
+    padding: 1em 0 .2em 0;
+}
+
+
+.contact-form input[type='button'] {
+    border: none;
+    border-radius: .5em;
+    margin-top: 1em;
+    padding: 1em 0;
+    width: 100%;
+}
+
 
  table {
       text-align: left;
+      width: 100%;
   }
+
+  /* th, tr, td {
+      width: 100%;
+  } */
+

@@ -23,7 +23,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="prices.html">Prices</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,80 +32,105 @@
     <main>
         <section id="section-1">
             <div class="container">
-                <h1 class="bold text-center my-1">
+                <h1 class="bold text-center">
                     Meet the Team
                 </h1>
-                <div class="flex text-center my-5">
+                <div class="flex text-center">
 
                     <div class="card">
-                        <img src="https://www.thesun.co.uk/wp-content/uploads/2020/01/NINTCHDBPICT000552145093.jpg" alt="questions"> 
-                            <p>Dr. Sheldon Cooper</p>  
-                            <p>Owner</p>
+                        <img src="https://www.thesun.co.uk/wp-content/uploads/2020/01/NINTCHDBPICT000552145093.jpg" alt="Profile pic of Sheldon Cooper"> 
+                        <p>Uncle Sheldon</p>  
+                        <p>Owner</p>
                     </div>
                     
                     <div class="card">
-                        <img src="https://pyxis.nymag.com/v1/imgs/ade/607/a7ac92d137842b2facefe2f910f950613d-17-penny-big-bang-theory.rsquare.w1200.jpg" alt="questions">   
+                        <img src="https://pyxis.nymag.com/v1/imgs/ade/607/a7ac92d137842b2facefe2f910f950613d-17-penny-big-bang-theory.rsquare.w1200.jpg" alt="Profile pic of Penny">   
                         <p>Penny Hofstadter</p>    
                         <p>Vice President</p> 
                     </div>
 
                     <div class="card">
-                        <img src="https://lh3.googleusercontent.com/-Osown9EcsuQ/AAAAAAAAAAI/AAAAAAAAABo/Qa-4Ix176SE/photo.jpg" alt="questions">  
+                        <img src="https://lh3.googleusercontent.com/-Osown9EcsuQ/AAAAAAAAAAI/AAAAAAAAABo/Qa-4Ix176SE/photo.jpg" alt="Profile pic of Leonard Hoftadter">  
                         <p>Dr. Leonard Hofstadter</p> 
                         <p>Inspections</p>   
                     </div>
 
                     <div class="card">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTev5Wvs7GNjIMDTcM1h83XuYAfGSbm1sL4YQ&usqp=CAU" alt="questions">  
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTev5Wvs7GNjIMDTcM1h83XuYAfGSbm1sL4YQ&usqp=CAU" alt="Profile pic of Rajesh Koothrappali">  
                         <p>Dr. Rajesh Koothrappali</p>  
                         <p>Operations Manager</p>   
                     </div>
 
                     <div class="card">
-                        <img src="https://deecrowseer.files.wordpress.com/2014/05/tbbt-hs-mb01.jpg" alt="questions">  
+                        <img src="https://deecrowseer.files.wordpress.com/2014/05/tbbt-hs-mb01.jpg" alt="Profile pic of Amy Farrah Fowler">  
                         <p>Dr. Amy Farrah Fowler</p>   
                         <p>Account Manager</p>                                            
                     </div>
 
                     <div class="card">
-                        <img src="https://media.glamour.com/photos/57f2c7469a82193d19bdd23c/6:7/w_1458,h_1701,c_limit/108783_WB_0590b.jpg" alt="questions">   
+                        <img src="https://media.glamour.com/photos/57f2c7469a82193d19bdd23c/6:7/w_1458,h_1701,c_limit/108783_WB_0590b.jpg" alt="Profile pic of Bernadette Wolowitz">   
                         <p> Dr. Bernadette Wolowitz</p>     
                         <p>Account Manager</p>
                     </div>
 
                     <div class="card">
-                        <img src="https://i.pinimg.com/236x/f6/38/01/f63801eaf1ea6584770294a3ceb5c60e--big-bang-theory-characters-howard-wolowitz.jpg" alt="questions">  
+                        <img src="https://i.pinimg.com/236x/f6/38/01/f63801eaf1ea6584770294a3ceb5c60e--big-bang-theory-characters-howard-wolowitz.jpg" alt="Profile pic of Howard Wolowitz">  
                         <p>Mr. Howard Wolowitz</p>
                         <p>Supervisor</p>
                     </div>
 
                     <div class="card">
-                        <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/BBT/9.jpg" alt="questions">   
+                        <img src="https://openpsychometrics.org/tests/characters/test-resources/pics/BBT/9.jpg" alt="Profile pic of Stuart Bloom">   
                         <p>Stuart Bloom</p>     
                         <p>Utilities</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://static.horizontimes.com/wp-content/uploads/2019/01/23152059/John-Ross-Bowie-as-Barry-Kripke-20190123152059-20190123152059.png" alt="Profile pic of Barry Kripke">   
+                        <p>Dr. Barry Kripke</p>     
+                        <p>Something</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="section-2">
-            <div class="container">
+            <div class="container flex">
+                <div class="contact-form card">
+                    <h2 class="form-title">Contact Form</h2>
+                    <form action="submit">
+                        <div class="form-control">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" name="telephone" id="phone" placeholder="555-555-555" required>
+                        </div>
+                        <div class="form-control">
+                            <input type="email" name="email" id="email" placeholder="name@email.com" required>
+                        </div>
+                        <div class="form-control">
+                            <input class="btn btn-primary" type="button" value="SUBMIT">
+                        </div>
+                    </form>
+                </div>
                 <div class="contact-info">
-                    <table>
-                        <th>Contact Us</th>
-                        <tr>
-                            <td>Address:</td>
-                            <td>4401 Fountaine Bleau Bld, Miami Beach, FL 90210</td>
-                        </tr>
-                        <tr>
-                            <td>Email:</td>
-                            <td>support@homecore.com</td>
-                        </tr>
-                        <tr>
-                            <td>Phone:</td>
-                            <td>678-999-8212</td>
-                        </tr>
-                    </table>
+                    <div class="table card">
+                        <table>
+                            <h2 class="table-title">Mailing Address</h2>
+                            <tr>
+                                <td>Address:</td>
+                                <td>4401 Fountaine Bleau Bld, Miami Beach, FL 90210</td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td>support@homecore.com</td>
+                            </tr>
+                            <tr>
+                                <td>Phone:</td>
+                                <td>678-999-8212</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
