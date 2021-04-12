@@ -33,14 +33,35 @@
     <main>
         <!-- Showcase -->
         <section class="hero" id="section-1">
+
+            <div class="container" id="popup">
+                <div class="card">
+                    <h3 class="form-title">Get a <span>Free</span> Estimate</h3>
+                    <form action="submit" class="popform">
+                        <div class="form-control">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-control">
+                            <input type="text" name="phone" id="phone" placeholder="Telephone #">
+                        </div>
+                        <div class="form-control">
+                            <input type="text" name="name" id="service" placeholder="Service Requested">
+                        </div>
+                        <div class="form-control">
+                            <input type="button" name="Send" id="send" value="Send" class="btn btn-primary">
+                            <input type="button" name="Close" id="close" value="Close" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
             <div class="container flex">
                 <div class="hero-text">
                     <h1><span>HOME</span>CORE</h1>
                     <h2>Preservation & Contracting Services</h2>
                     <p>We are dedicated to providing quality services, unparalleled suggestions 
                         and best practices that are supported by a best-in-class customer service experience in the industry.</p>
-                        <a class="btn btn-primary" href="mailto:vendormanagement@homecore.com?subject=Become a vendor">Join Us</a>
-                    <a class="btn btn-primary" href="mailto:support@homecore.com?subject=Help">Contact</a>
+                    <a class="btn btn-primary" id="contact">Click Me</a>
                 </div>
             </div>
             
@@ -152,5 +173,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
