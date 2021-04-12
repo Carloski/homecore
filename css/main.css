@@ -138,6 +138,16 @@ BUTTONS
   background-color: var(--primary);
 }
 
+.btn-secondary {
+  color: var(--secondary);
+  background-color: var(--accent);
+}
+
+.btn-secondary:hover {
+  color: var(--secondary);
+  background-color: rgb(253, 62, 62);
+}
+
 
 
 /* 
