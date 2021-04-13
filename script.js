@@ -11,7 +11,7 @@ let send = document.getElementById('send');
 
 /* 
 =============================
-EVENT LISTENERS W/ FUNTIONS
+EVENT LISTENERS W/ FUNCTIONS
 =============================
 */
 
