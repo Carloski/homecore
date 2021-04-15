@@ -4,10 +4,11 @@ VARIABLES
 ==============
 */
 
-let form = document.getElementById("popup");
+let form = document.getElementById('popup');
 let contact = document.getElementById('contact');
 let close = document.getElementById('close');
 let send = document.getElementById('send');
+let btn = document.getElementById('scrollButton')
 
 /* 
 =============================

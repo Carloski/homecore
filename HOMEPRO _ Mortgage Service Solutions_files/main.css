@@ -151,8 +151,8 @@ BUTTONS
 #scrollButton {
   position: fixed;
   display: none;
-  bottom: 25em;
-  right: 2em;
+  bottom: 15em;
+  right: 5em;
   z-index: 99;
 }
 

@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header class="navbar">
+    <header class="navbar" id="navbar">
         <div class="container flex">
             <h1 class="logo"><span>home</span>core</h1>
             
@@ -133,6 +133,7 @@
                     </div>
                 </div>
             </div>
+            <a href="#navbar"><button id="scrollButton" class="btn btn-primary"><i class="fas fa-arrow-up"> Back 2 Top</i></button></a>
         </section>
     </main>
 
@@ -150,6 +151,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let btn = document.getElementById('scrollButton')
+        window.onscroll = function() {
+            displayButton()
+        };
+        // Display button when user scrolls down more than 30px from the top
+        function displayButton() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        }
+    </script>
     
 </body>
 </html>

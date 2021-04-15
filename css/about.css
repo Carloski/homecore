@@ -1,3 +1,8 @@
+p {
+  font-size: 1.1rem;
+  line-height: 2.1rem;
+}
+
 
 #section-1 .flex {
   flex-wrap: wrap;
