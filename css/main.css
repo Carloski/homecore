@@ -128,24 +128,24 @@ BUTTONS
   border-radius: .4em;
 }
 
-.btn:hover {
-  background-color: var(--accent);
-  color: var(--primary);
-}
-
 .btn-primary {
   color: var(--secondary);
   background-color: var(--primary);
 }
 
-.btn-secondary {
-  color: var(--secondary);
+.btn-primary:hover {
+  font-weight: 900;
   background-color: var(--accent);
 }
 
+.btn-secondary {
+  background-color: hsl(0, 98%, 62%);
+}
+
 .btn-secondary:hover {
-  color: var(--secondary);
-  background-color: rgb(253, 62, 62);
+  font-weight: 900;
+  background-color: hsl(0, 71%, 52%);
+  
 }
 
 #scrollButton {
