@@ -10,10 +10,13 @@ COLOURS
   --primary: #0a1725;
   --secondary: #fff;
   --accent: #ff8d00;
+  --accentdark: #e67e00;
   --dark:#161616;
   --lightGray: #dad8d8;
   --text: #333;
   --links: #275a91;
+  --red: #fd3f3f;
+  --darkred: #dc2e2e;
 }
 
 /* 
@@ -139,13 +142,24 @@ BUTTONS
 }
 
 .btn-secondary {
-  background-color: hsl(0, 98%, 62%);
+  background-color: var(--darkred);
 }
 
 .btn-secondary:hover {
   font-weight: 900;
-  background-color: hsl(0, 71%, 52%);
+  background-color: var(--red);
   
+}
+
+.btn-scroll {
+  border-radius: 50%;
+  padding: 2em;
+  color: var(--secondary);
+  background-color: var(--accentdark);
+}
+
+.btn-scroll:hover {
+  background-color: var(--accent);
 }
 
 #scrollButton {
