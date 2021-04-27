@@ -74,26 +74,28 @@
                 <div id="design" class="card">
                     <h3>Design Choices</h3>
                     <p>
-                        When I was thinking about building this site, I knew I wanted to make it clean, 
-                        somewhat modern and something I would like to visit. I didn't want anything too busy that could be hard 
-                        to navigate. If the information is hard to get to or takes too many clicks to get information, 
-                        users tend to leave and not return. I also added some <a href="https://bit.ly/2OPeqq6" target="_blank"><span style="font-style: italic;">CSS animations</span></a> in the about page as well as in the navigation and social lins
-                        to make it more attractive. 
+                        When I was thinking about building this site, I knew I wanted to make it clean, modern, and comfortable. 
+                        Something that I would like to visit. I didn't want anything too busy that could be hard to navigate. 
+                        If the information is hard to get to or takes too many clicks to get the information you're looking for, users tend to get frustrated and end up finding the information 
+                        on another site. To achieve this, I used a total of five colors for the entire project. I used four of them repeatedly across all pages and one red color for the "close" button. 
+                        I also added some <a href="https://bit.ly/2OPeqq6" target="_blank"><span style="font-style: italic;">CSS animations</span></a> 
+                        in the about page as well as in the navigation and social links to make it more attractive.  
                     </p>
                     <p>
                         To make the code a bit easier to maintain, I used <a href="https://bit.ly/3gcgxzC" target="_blank"><span style="font-style: italic;">"em and "rem"</span></a> in most areas instead of pixels. These units are a multiples 
                         of the page's Pixel size. For example, if the HTML pixel sixe is 16px (This is the default size for browsers) 2em or 2rem would be the same as to 32 pixels (16 X 2 = 32).
-                        This made th etimes I wanted to test larger or smaller font sizes in different areas. I can cahnge all the font sizes at once, Iinstead of doing it
-                        one by one. It's also useful when setting margin and padding on certain elements. To keep the code more uniformed, I used "rem" only for font sizes and "em" on everything else. Here's a link to a page I found that explains it much better than I ever could. 
+                        Using <a href="https://bit.ly/3gcgxzC" target="_blank"><span style="font-style: italic;">"em and "rem"</span></a> 
+                        makes testing larger or smaller font sizes in different areas much more efficient. I can change all the font sizes by changing the primary font size of the page instead of changing each element one by one.
+                        It's also helpful when setting margin and padding on certain elements. To keep the code more uniform and easier to maintain, I only used "rem" on font sizes and "em" on everything else. Here's a link to a page I found that explains it much better than I ever could. 
                         <a href="https://bit.ly/3gcgxzC" target="_blank"><span style="font-style: italic;">Em vs. Rem: Comprehensive Guide</span></a>.
                     </p>
                     <p>
                         I also made use of <a href="https://mzl.la/3e7NSsH" target="_blank"><span style="font-style: italic;">CSS Variables</span></a>. 
-                        If you go throught he code and look at the elements that use "color" or "background-color" you'll see something like "var(--primary)" as it's value. Like em and rem, this allowed me to test one color in different areas by changing it in 
-                        one line of code instead of changing the color in every area. Here's a link if you want to read more about <a href="https://mzl.la/3e7NSsH" target="_blank"><span style="font-style: italic;">custom properties</span></a>. 
+                        If you go through the code and look at the elements that use "color" or "background-color",  you'll see something like "var(--primary)" as its value. Like em and rem, using CSS variables allowed me to test colors in different
+                        areas by changing one line of code. Here's a link if you want to read more about <a href="https://mzl.la/3e7NSsH" target="_blank"><span style="font-style: italic;">custom properties</span></a>. 
                     </p>
                     <p>
-                        The Showcase area of the homepage features a fixed images to give a nice scrolling effect. I implemented a 
+                        The Showcase area of the homepage features a fixed image to give a nice scrolling effect. I implemented a 
                         "multiply" effect with a gradient background to darken the image. This allowed for the layer above the image to look brighter 
                         and more readeable. I used a <a href="https://mzl.la/3uOXf7B" target="_blank"><span style="font-style: italic;">feature query</span></a> as a back up in case any the page is ebing viewed in a browsersthat doesn't support the "multiply" effect.
                         You can find more information by cliking on <a href="https://mzl.la/3uOXf7B" target="_blank"><span style="font-style: italic;">feature query</span></a>
